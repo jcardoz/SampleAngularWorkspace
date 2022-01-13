@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "start:shell": "ng serve shell -o --port 8080",
+    "start:shell": "ng serve shell -o --port 8000",
     "start:app1": "ng serve app1 -o --port 8001",
     "run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js"
   },
