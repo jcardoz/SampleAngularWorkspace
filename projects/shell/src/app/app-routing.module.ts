@@ -10,13 +10,12 @@ const routes: Routes = [
   {
     path: 'sample',
     loadChildren: () =>
-        loadRemoteModule({
-            type: 'module',
-            remoteEntry: 'http://localhost:8001/remoteEntry.js',
-            exposedModule: './Module'
-        })
-        .then(m => m.SampleModule)
-},
+      loadRemoteModule({
+        type: 'module',
+        remoteEntry: 'http://localhost:8001/remoteEntry.js',
+        exposedModule: './Module',
+      }).then((m) => m.SampleModule),
+  },
 ];
 
 @NgModule({
