@@ -1,0 +1,4 @@
+# CODEOWNERS
+# The users in this file will be automatically added to each PR raised to the main branch
+# If you would like to explicitly add a user to review a certain file, make sure to do so when raising a Pull Request
+* @jcardoz
