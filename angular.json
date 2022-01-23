@@ -21,7 +21,12 @@
 						"aot": true,
 						"assets": [
 							"projects/shell/src/favicon.ico",
-							"projects/shell/src/assets"
+							"projects/shell/src/assets",
+							{
+								"glob": "**/*",
+								"input": "projects/app1/src/assets",
+								"output": "assets"
+							}
 						],
 						"styles": [
 							"projects/shell/src/styles.css"
