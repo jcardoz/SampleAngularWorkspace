@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'shell';
+
+  public callButtonClick(): void {
+    console.log('button click event');
+  }
 }

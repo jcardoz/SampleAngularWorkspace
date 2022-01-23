@@ -25,4 +25,12 @@ describe('AppComponent', () => {
     const app = fixture.componentInstance;
     expect(app.title).toEqual('shell');
   });
+
+  it(`should call callButtonClick on click of button`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    spyOn(app, 'callButtonClick').and.callThrough(); // method attached to the click.
+    app.callButtonClick();
+    expect(app.callButtonClick).toHaveBeenCalled();
+  });
 });
